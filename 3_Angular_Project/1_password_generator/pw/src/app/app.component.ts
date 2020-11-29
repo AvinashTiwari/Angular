@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { of } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ export class AppComponent {
   includeLetters = false;
   includeNumbers = false;
   includeSymbols = false;
+  length = 0;
   onChangeUseLetters(){
 
     this.includeLetters= !this.includeLetters;
@@ -22,6 +24,15 @@ export class AppComponent {
   onChangeUseSymbols() {
 
     this.includeSymbols= !this.includeSymbols;
+  }
+
+  onChangeLength(value: string){
+    const parseValue = parseInt(value);
+    if(!isNaN(parseValue)){
+      this.length = parseValue;
+
+    }
+
   }
 
   onButtonClick(){
