@@ -1,19 +1,12 @@
 
 <app-card
- [title] = "post[0].title"
- [imageUrl] = "post[0].imageUrl"
- [username] = "post[0].username"
- [content] = "post[0].content"
+*ngFor = "let po of post"
+ [title] = "po.title"
+ [imageUrl] = "po.imageUrl"
+ [username] = "po.username"
+ [content] = "po.content"
 
 ></app-card>
-<app-card  [title] = "post[1].title"
-[imageUrl] = "post[1].imageUrl"
-[username] = "post[1].username"
-[content] = "post[1].content"
-></app-card>
-<app-card  [title] = "post[2].title"
-[imageUrl] = "post[2].imageUrl"
-[username] = "post[2].username"
-[content] = "post[2].content"></app-card>
+
  
 
