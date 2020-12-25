@@ -7,4 +7,5 @@ import { lorem } from "faker";
 })
 export class AppComponent {
   title = 'typing';
+  randomText = lorem.sentence();
 }
