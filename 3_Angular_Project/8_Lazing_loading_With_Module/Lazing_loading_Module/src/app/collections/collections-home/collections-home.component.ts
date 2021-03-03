@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CollectionsHomeComponent implements OnInit {
   data = [
-    {name: 'James', age:24 , job:'designer'},
-    {name: 'Jill', age:25, job:'Engineer'},
-    {name: 'Elys', age:26, job: 'Engineer'}];
+    {name: 'James', age:24 , job:'designer', employed: true},
+    {name: 'Jill', age:25, job:'Engineer', employed: false},
+    {name: 'Elys', age:26, job: 'Engineer', employed: true}];
   
-  headers =[{key:'name', label:'Name'},
+  headers =[
+    {key:'employed', label:'Has a Job?'},
+    {key:'name', label:'Name'},
            {key:'age', label:'Age'},
            {key:'job', label:'Job'}];
 
