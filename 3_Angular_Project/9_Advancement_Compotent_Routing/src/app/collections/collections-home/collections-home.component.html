@@ -3,21 +3,4 @@
 
 
 <app-divider>Tab Menu</app-divider>
-<div class="ui grid">
-    <div class="four wide column">
-        <div class="ui vertical fluid tabular menu">
-            <a  class="item" routerLink="./"  routerLinkActive="active"
-            [routerLinkActiveOptions]="{exact: true}">Biography</a> <br/>
-            <a class="item" routerLink="/collections/companies" routerLinkActive="companies" >Companies</a>
-            <a class="item" routerLink="/collections/partners" routerLinkActive="partners">Partners</a>
-
-        </div>
-
-    </div>
-    <div class="twelve wide strectched column">
-        <div class="ui segment">
-            <router-outlet></router-outlet>
-        </div>
-    </div>
-</div>
-
+<app-tabs></app-tabs>
