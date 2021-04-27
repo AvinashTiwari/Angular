@@ -1,4 +1,4 @@
-class Car {
+class Car1 {
   // color: string;
   // year: number;
 
@@ -15,7 +15,7 @@ class Car {
   }
 }
 
-const myCar = new Car('red', 2000);
+const myCar = new Car1('red', 2000);
 myCar.drive();
 
 console.log(myCar.color, myCar.year); // 'red', 2000

@@ -1,4 +1,4 @@
-class Car {
+class Car2 {
   public color: string;
   private year: number;
 
@@ -20,7 +20,7 @@ class Car {
   private turnWheel() {}
 }
 
-const myCar = new Car('red', 2000);
+const myCar = new Car2('red', 2000);
 myCar.drive();
 
 myCar.drive();
