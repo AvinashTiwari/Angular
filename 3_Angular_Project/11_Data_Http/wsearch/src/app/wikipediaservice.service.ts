@@ -7,4 +7,8 @@ import {HttpClient} from '@angular/common/http'
 export class WikipediaserviceService {
 
   constructor(private http: HttpClient) { }
+
+  public search(term: string){
+    return this.http;
+  }
 }
