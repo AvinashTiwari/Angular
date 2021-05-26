@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Injectable, ReflectiveInjector } from '@angular/core';
+
 import { WikipediaService } from './wikipedia.service'
 
 @Component({
@@ -11,7 +12,8 @@ export class AppComponent {
 
   title = 'wsearch';
   onTerm(term: string) {
-    const results = this.wikipedia.search(term);
-    console.log(results);
+    this.wikipedia.search(term).subscribe(response => {
+      console.log(response);
+    });
   }
 }
